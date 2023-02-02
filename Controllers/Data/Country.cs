@@ -8,5 +8,8 @@ namespace HotelListing.Controllers.Data
         [Key] public int Id { get; set; }
         [Required] public string Name { get; set; } = string.Empty;
         [Required] public string ShortName { get;set; } = string.Empty;
+
+        public virtual IList<Hotel> Hotels { get; set; }
+        
     }
 }
